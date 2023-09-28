@@ -14,5 +14,14 @@ ActiveAdmin.register Article do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+
+  form do |f|
+    f.inputs 'Article' do
+      f.input :title
+      f.input :body, as: :simplemde_editor
+    
+    end
+    f.actions
+  end
   
 end
