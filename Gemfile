@@ -82,3 +82,5 @@ gem "devise", "~> 4.9"
 
 
 gem 'activeadmin_simplemde'
+gem 'rouge'
+gem 'redcarpet'
