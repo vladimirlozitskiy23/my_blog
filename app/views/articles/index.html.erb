@@ -1,9 +1,10 @@
-<div class="container">
+
   <%# <h1>Articles:</h1> %>
   <%= search_form_for  @q  do |f| %>
-    <%# <%= f.label :title %> 
-    <%= f.search_field :title_or_body_cont_any %>
-    <%= f.submit %>
+<div class="form-group">
+    <%= f.search_field :title_or_body_cont_any %>  
+    <%= f.submit 'Search', class: "btn btn-primary" %>
+ </div>   
   <% end %>
   <br/>
   <% @articles.each do |article|%>
@@ -20,4 +21,3 @@
   </div>
   <br/>
   <%end%>
-</div>
