@@ -17,7 +17,7 @@
         
           <div class="row"> 
             <div class="col-12">
-              <div id="border_x" class="border border-success p-2 border-opacity-25 rounded">
+              <div  class="border border-success p-2 border-opacity-25 rounded">
                 <p>
                     <%= link_to article.title, article_path(article), style: 'color:#d63e2d; font-size: 40px; ' %> 
                 </p>
@@ -34,13 +34,24 @@
         <%end%>
     </div>  
         <div class="col-3">
-           <div id="border_y" class="border border-success p-2 border-opacity-25 rounded">
+          <div class="row">
+           <div  class="border border-success p-2 border-opacity-25 rounded">
              <% @articles.each do |article|%>
                 <p> 
                   <%= link_to article.title, article_path(article), style: 'color:#000000;' %>
                </p>
              <% end %>
            </div>
+          </div> 
+          <br/>
+          <div class="row">
+            <div  class="border border-success p-2 border-opacity-25 rounded">
+             <p> Something </p>
+             <p> Something </p>
+             <p> Something </p>
+             <p> Something </p>
+            </div>
+          </div>
         </div>
     
   </div>
