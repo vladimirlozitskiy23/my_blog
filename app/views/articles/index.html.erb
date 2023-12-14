@@ -36,7 +36,7 @@
         <div class="col-3">
           <div class="row">
            <div  class="border border-success p-2 border-opacity-25 rounded">
-             <% @articles.each do |article|%>
+             <% @posts.take(10).reverse_each do |article|%>
                 <p> 
                   <%= link_to article.title, article_path(article), style: 'color:#000000;' %>
                </p>
@@ -46,10 +46,9 @@
           <br/>
           <div class="row">
             <div  class="border border-success p-2 border-opacity-25 rounded">
-             <p> Something </p>
-             <p> Something </p>
-             <p> Something </p>
-             <p> Something </p>
+               <% @posts.each do |article|%>
+             <p>  <%= link_to article.created_at, article_path(article), style: 'color:#000000;' %></p>
+               <% end %> 
             </div>
           </div>
         </div>
