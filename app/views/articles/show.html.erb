@@ -1,8 +1,12 @@
 
 <div class="container">
-  <p style="color:#d63e2d; font-size: 30px;"><%= @article.title %></p>
-  
-  <div class="border border-success p-2 border-opacity-25 rounded">
-    <p><%= markdown @article.body%></p>
-  </div>
+  <div class="row">
+    <div class="col-10">
+      <p style="color:#d63e2d; font-size: 30px;"><%= @article.title %></p>
+      
+      <div class="border border-success p-2 border-opacity-25 rounded">
+        <p><%= markdown @article.body%></p>
+      </div>
+    </div>  
+   </div> 
 </div>
