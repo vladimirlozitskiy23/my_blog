@@ -46,8 +46,8 @@
           <br/>
           <div class="row">
             <div  class="border border-success p-2 border-opacity-25 rounded">
-               <% @posts.each do |article|%>
-             <p>  <%= link_to article.created_at, article_path(article), style: 'color:#000000;' %></p>
+               <% @posts.take(10).each do |article|%>
+             <p>  <%= link_to article.created_at.to_time.strftime(' %e %B  %Y'), article_path(article), style: 'color:#000000;' %></p>
                <% end %> 
             </div>
           </div>
