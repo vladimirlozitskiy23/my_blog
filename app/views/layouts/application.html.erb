@@ -13,11 +13,32 @@
 
   <body>
   <div class="container">
-  <%= image_tag 'rails_image'%>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF;">
+    <%= image_tag 'rails_image'%>
+
+    <%# <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <a class="nav-link" href="#">Features</a>
+    <a class="nav-link" href="#">Pricing</a>   %>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <b><a class="nav-link" style="color: #d63e2d"  href="https://ruby-doc.org">Ruby-doc</a></b>
+        <b><a class="nav-link" style="color: #d63e2d" href="https://guides.rubyonrails.org">Rubyonrails.org</a></b>
+        <b><a class="nav-link" style="color: #d63e2d" href="https://stackoverflow.com/questions/tagged/ruby-on-rails">Ask for help</a></b>
+        <b><a class="nav-link" style="color: #d63e2d"  href="https://github.com/vladimirlozitskiy23">Github</a></b>
+      </div>
+    </div>
+
+
+  </nav>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
+  
     <%= yield %>
+    
     </div>
   </body>
 </html>
