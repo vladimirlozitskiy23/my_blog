@@ -7,11 +7,7 @@
   <% end %>
   <br/>
 
- 
-
-  
-
-  <div class="row">
+ <div class="row">
     <div class="col-9">
         <% @articles.each do |article|%>
         
@@ -24,6 +20,10 @@
 
                 <p>
                     <%= markdown article.body%>
+                </p>
+                <br/>
+                <p class="created_at">
+                    <%= article.created_at.to_time.strftime(' %e %B  %Y') %>
                 </p>
 
               </div>
