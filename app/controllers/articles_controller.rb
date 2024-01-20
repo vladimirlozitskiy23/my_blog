@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
     # before_action :authenticate_user!
     def before_action
       @posts = Article.all
+      @articles = Article.all
     end
     def index
         #  @articles = Article.all 
